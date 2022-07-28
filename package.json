@@ -1,0 +1,21 @@
+{
+    "devDependencies": {
+        "@hotwired/stimulus": "^3.0.0",
+        "@symfony/stimulus-bridge": "^3.2.0",
+        "@symfony/webpack-encore": "^3.0.0",
+        "core-js": "^3.23.0",
+        "regenerator-runtime": "^0.13.9",
+        "vue": "^2.5",
+        "vue-loader": "^15.9.5",
+        "vue-template-compiler": "^2.7.8",
+        "webpack-notifier": "^1.15.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    }
+}
