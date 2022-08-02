@@ -1,16 +1,28 @@
-import Vue from 'vue';
-import VueRouter, {createWebHistory, useRouter, Router} from "vue-router";
-import Home from "../views/Home";
+import { createRouter, createWebHistory } from 'vue-router'
+// import Home from "../views/Home";
 
 
-Vue.use(useRouter, createWebHistory, router)
-
-const router = new RouterLink([
+const routes = [
     {
-        path:'/',
-        component: Home,
-        name: 'Home'
-    }
-])
+        path: '/',
+        name: 'home',
+        // component: Home
+        component: () => import(/* webpackChunkName: "about" */ '../views/Home')
+    },
+    {
+        path: '/dashboard',
+        name: 'dashboard',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "about" */ '../views/Dashboard')
+    },
 
-export default router;
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+})
+
+export default router
