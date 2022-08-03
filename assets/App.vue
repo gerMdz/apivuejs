@@ -1,21 +1,26 @@
 <template>
-  <div class="container">
-    <Home/>
-    <router-view/>
-    <h4>Home</h4>
-  </div>
+<!--  <Navbar />-->
+  <b-container fluid>
+<!--    <Home/>-->
+    <Navbar />
+    <router-view>
+    </router-view>
+
+  </b-container>
 </template>
 
 <script>
 
 import Home from "./views/Home";
 import Link from "./router";
+import Navbar from "./components/Navbar";
 
 export default {
   name: "App",
   components: {
-    Home,
-    Link
+    // Home,
+    // Link,
+    Navbar
   }
 }
 </script>
