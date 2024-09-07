@@ -1,15 +1,13 @@
 {
     "devDependencies": {
-        "@babel/plugin-transform-runtime": "^7.18.10",
-        "@babel/runtime": "^7.18.9",
         "@hotwired/stimulus": "^3.0.0",
         "@symfony/stimulus-bridge": "^3.2.0",
         "@symfony/webpack-encore": "^3.0.0",
         "core-js": "^3.23.0",
-        "css-loader": "^6.7.1",
         "regenerator-runtime": "^0.13.9",
-        "vue-loader": "^15.10.0",
-        "vue-template-compiler": "2.5.18",
+        "vue": "^2.5",
+        "vue-loader": "^15.9.5",
+        "vue-template-compiler": "^2.7.16",
         "webpack-notifier": "^1.15.0"
     },
     "license": "UNLICENSED",
@@ -19,14 +17,5 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
-    },
-    "dependencies": {
-        "bootstrap": "^4.6.2",
-        "bootstrap-vue": "^2.22.0",
-        "jquery": "^3.6.0",
-        "popper.js": "^1.16.1",
-        "vue": "2.5.18",
-        "vue-router": "^3.5.4",
-        "vuex": "^3.6.2"
     }
 }
