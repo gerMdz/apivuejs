@@ -7,7 +7,7 @@
         "regenerator-runtime": "^0.13.9",
         "vue": "^2.5",
         "vue-loader": "^15.9.5",
-        "vue-template-compiler": "^2.7.8",
+        "vue-template-compiler": "^2.7.16",
         "webpack-notifier": "^1.15.0"
     },
     "license": "UNLICENSED",
