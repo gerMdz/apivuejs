@@ -63,7 +63,12 @@ Encore
 
     // uncomment if you use React
     //.enableReactPreset()
-    .enableVueLoader()
+    .enableVueLoader(() => {
+        return {
+            version: 3,
+            runtimeCompiler: true,
+        };
+    })
 
 
     // uncomment to get integrity="..." attributes on your script & link tags

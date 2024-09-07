@@ -1,5 +1,5 @@
 <template>
-<h2>Jeje</h2>
+<h2>Por aquí</h2>
 </template>
 
 <script>
